@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2em 4em;
+}
+
+li {
+  padding-right: 2em;
+}
