@@ -1,0 +1,48 @@
+h1 {
+  height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+form {
+  display: flex; 
+  flex-direction: column;
+  height: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+  padding: 20px 20px 5% 20px;
+  
+}
+
+label {
+  margin-right: 10px;
+}
+
+
+.name {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(155, 149, 149);
+}
+
+.email {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(155, 149, 149);
+}
+
+.message {
+  flex: 1;
+  padding: 10px;
+  
+}
