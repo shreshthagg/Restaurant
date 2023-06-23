@@ -1,12 +1,30 @@
 .navbar {
-  display: flex;
-  list-style: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  margin: 2em 4em;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: flex-end;
+  padding: 2em;
+  margin: 0;
+  background-color: antiquewhite;
+  box-shadow: 8px 3px 3px rgba(118, 118, 118, 0.447);
+  transition: all 0.5s ease;
 }
 
-li {
+.navbar a {
   padding-right: 2em;
+  color: black;
+}
+
+.navbar a:hover {
+  color: rgba(0, 0, 0, 0.538);
+}
+
+.shrink {
+  height: 50px;
+  padding: 1em 2em;
 }
