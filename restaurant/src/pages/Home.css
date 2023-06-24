@@ -56,6 +56,7 @@
   max-width: 50vw;
   display: flex;
   flex-direction: row;
+  place-items: center;
   margin-top: 1rem;
   padding: 1rem 2rem;
   border: solid black 1px;
@@ -68,6 +69,8 @@
   background-size: cover;
   background-color: rgb(240, 177, 94);
   border-radius: 50%;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 .card .description {
@@ -81,4 +84,28 @@
   margin-left: 3rem;
   margin-right: 0;
   text-align: left;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 14px;
+  }
+  .card {
+    max-height: 50vh;
+    max-width: 50vw;
+    flex-direction: column;
+  }
+
+  .card .profile {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card .description p {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
 }

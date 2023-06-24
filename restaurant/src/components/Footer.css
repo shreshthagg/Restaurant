@@ -1,4 +1,5 @@
 .footer {
+  width: calc(100vw - 4rem);
   display: flex;
   margin: 0;
   background-color: black;

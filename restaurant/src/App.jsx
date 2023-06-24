@@ -2,6 +2,7 @@ import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Menu from './pages/Menu';
+import Location from './pages/Location';
 import Contact from './pages/Contact';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/reviews',
     element: <Reviews />,
+  },
+  {
+    path: '/location',
+    element: <Location />,
   },
 ]);
 
