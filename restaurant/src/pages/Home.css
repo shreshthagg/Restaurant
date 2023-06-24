@@ -11,9 +11,10 @@
 .background {
   margin-top: 0;
   height: 55vh;
-  background-size: cover;
+  width: 100vw;
   background-image: url(../assets/cookies.jpg);
   margin-bottom: 40px;
+  background-size: cover;
 }
 
 .top {
@@ -63,8 +64,6 @@
 }
 
 .card .profile {
-  min-width: 100px;
-  min-height: 100px;
   background-image: url(../assets/profile.png);
   background-size: cover;
   background-color: rgb(240, 177, 94);

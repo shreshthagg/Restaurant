@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Footer from "../components/Footer";
-import menuData from "../data/menuData";
-import "./Menu.css";
+import { useState } from 'react';
+import Footer from '../components/Footer';
+import menuData from '../data/menuData';
+import './Menu.css';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState(
@@ -18,14 +18,14 @@ const Menu = () => {
         <h1 className='menu-header'>Menu</h1>
 
         <div className='menu-border'>
-          {" "}
+          {' '}
           {/* Wrap the elements in a div with the menu-border class */}
           <div className='menu-categories'>
             {Object.keys(menuData).map((category) => (
               <button
                 key={category}
                 className={`category-btn ${
-                  category === activeCategory ? "active" : ""
+                  category === activeCategory ? 'active' : ''
                 }`}
                 onClick={() => handleClick(category)}
               >

@@ -1,14 +1,14 @@
-h1 {
+.contact h1 {
   height: 10em;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 }
 
-form {
-  display: flex; 
+.contact form {
+  display: flex;
   flex-direction: column;
   height: 10em;
   position: absolute;
@@ -19,13 +19,11 @@ form {
   background-color: rgb(63, 63, 63);
   border-radius: 10px;
   padding: 20px 20px 5% 20px;
-  
 }
 
-label {
+.contact label {
   margin-right: 10px;
 }
-
 
 .name {
   flex: 1;
@@ -44,5 +42,4 @@ label {
 .message {
   flex: 1;
   padding: 10px;
-  
 }
