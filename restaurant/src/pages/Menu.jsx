@@ -40,7 +40,7 @@ const Menu = () => {
                   <img src={item.image} alt={item.name} />
                 </div>
                 <div className='item-details'>
-                  <h3>{item.name}</h3>
+                  <h3 className='menu-item-h3'>{item.name}</h3>
                   <p className='item-price'>${item.price.toFixed(2)}</p>
                   <p className='item-description'>{item.description}</p>
                   <div className='item-tags'>

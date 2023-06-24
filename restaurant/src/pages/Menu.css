@@ -5,8 +5,9 @@ body {
   flex-direction: column;
 }
 
-h3,
-p {
+.menu-item-h3,
+.item-price,
+.item-description {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -38,6 +39,7 @@ p {
   border: 3px solid transparent;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .category-btn:hover {
