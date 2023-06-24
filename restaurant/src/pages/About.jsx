@@ -1,5 +1,6 @@
 import "./About.css";
 import background from "../assets/bakery.png"
+import Footer from "../components/Footer";
 
 
 function About() {
@@ -22,6 +23,7 @@ function About() {
           <a href="/contact"> Contact us.</a>
         </p>
       </div>
+      <Footer />
     </>
   );
 }
