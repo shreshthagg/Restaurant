@@ -1,0 +1,58 @@
+.banner-image {
+    min-height: 350px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .review-title {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 400;
+      color: white;
+    }
+    .review-container {
+      display: inline-block;
+      justify-content: space-between;
+      font-size: 1.4rem;
+      padding: 1rem;
+    }
+    .review-box .review-text {
+      margin: 1rem 0;
+      color: #444;
+    }
+    .review-box {
+      text-align: center;
+      padding: 1rem;
+    }
+    .customer-photo img {
+      display: block;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .review-container{
+      flex-direction: column;
+      text-align: center;
+    }
+
+
+
+
+    .checked {
+      color: orange;
+    }
