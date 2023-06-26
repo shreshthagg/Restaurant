@@ -8,9 +8,13 @@ const Menu = () => {
   const [activeCategory, setActiveCategory] = useState();
 
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
   useEffect(() => {
+    setLoading(true);
     fetch('http://localhost:3000/api/v1/menu')
       .then((res) => {
+        setLoading(false);
         if (res.ok) {
           return res.json();
         }
@@ -21,6 +25,7 @@ const Menu = () => {
         setActiveCategory(Object.keys(res)[0]);
       })
       .catch((error) => {
+        setLoading(false);
         console.log(error);
         setErrorMessage('Load menu failed!');
       });
@@ -73,6 +78,7 @@ const Menu = () => {
                 </div>
               ))}
           </div>
+          {loading && <div className='loader'> </div>}
           {errorMessage && <p className='error'>{errorMessage}</p>}
         </div>
       </div>
