@@ -1,30 +1,44 @@
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import './contact.css';
 
 function Contact() {
-  const form = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const sendEmail = (e) => {
+  const clearFields = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setErrorMessage('');
+  };
+
+  const handleSubmit = (e, info) => {
     e.preventDefault();
+    clearFields();
 
-    emailjs
-      .sendForm(
-        'service_7mo1mjf',
-        'template_5xc96lk',
-        form.current,
-        'XlK6MTtIrkbuYN4Ll'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
+    const { name, email } = info;
+    if (!name || !email) {
+      setErrorMessage('Please enter your name and email.');
+      return;
+    }
+
+    fetch('http://localhost:3000/api/v1/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(info),
+    })
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
         }
-      );
+        throw new Error('Send request failed.');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   return (
@@ -33,14 +47,29 @@ function Contact() {
       <div className='contacts'>
         <h1>Contact Us!</h1>
       </div>
-      <form ref={form} onSubmit={sendEmail}>
+      <form onSubmit={(e) => handleSubmit(e, { name, email, message })}>
         <label>Enter Your Name</label>
-        <input type='text' name='user_name' />
+        <input
+          type='text'
+          name='name'
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <label>Enter Your Email</label>
-        <input type='email' name='user_email' />
+        <input
+          type='email'
+          name='email'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <label>Enter Your Message</label>
-        <textarea name='message' />
+        <textarea
+          name='message'
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+        />
         <input type='submit' value='SEND' />
+        {errorMessage && <p className='error'>{errorMessage}</p>}
       </form>
     </div>
   );

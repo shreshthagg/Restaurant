@@ -1,8 +1,8 @@
-.contacts{
+.contacts {
   margin-top: 130px;
 }
 form {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   background-color: rgb(140, 98, 98);
   border-radius: 10px;
@@ -16,7 +16,6 @@ form {
   color: black;
   font-size: larger;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
 label {
@@ -27,27 +26,25 @@ label {
   margin-top: 1px;
 }
 
-
-input[type=text] {
+input[type='text'] {
   flex: 1;
   padding: 10px;
   background-color: rgb(235, 214, 198);
   border-radius: 5px;
   border-bottom: 3px solid rgb(68, 10, 10);
   font-size: large;
-  font-weight:bold;
+  font-weight: bold;
   color: black;
-
 }
 
-input[type=email] {
+input[type='email'] {
   flex: 1;
   padding: 10px;
   background-color: rgb(235, 214, 198);
   border-radius: 5px;
   border-bottom: 3px solid rgb(68, 10, 10);
   font-size: large;
-  font-weight:bold;
+  font-weight: bold;
   color: black;
 }
 
@@ -62,7 +59,7 @@ textarea {
   color: black;
 }
 
-input[type=submit] {
+input[type='submit'] {
   flex: 1.5;
   margin-top: 10px;
   font-size: medium;
