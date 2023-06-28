@@ -9,6 +9,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Reviews from './pages/Reviews';
 import Navbar from './components/Navbar';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -39,6 +42,18 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <ToastContainer
+        position='top-right'
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover={false}
+        theme='light'
+      />
       <Navbar />
       <RouterProvider router={router} />
     </>

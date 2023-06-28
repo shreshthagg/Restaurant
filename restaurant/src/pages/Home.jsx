@@ -45,6 +45,14 @@ function Home() {
           </button>
         </div>
       </div>
+      <div className='disclaimer'>
+        <p>
+          All resources in this page are obtained from Internet to help finish
+          this assignment. If any kinds of infringement happens, please let us
+          know at
+          <a href='/contact'> Contact us.</a>
+        </p>
+      </div>
       <Footer />
     </>
   );

@@ -21,6 +21,7 @@ app.get('/api/v1/menu', (req, res) => res.json(data));
 const uri = `mongodb+srv://testUser:${process.env.TEST_PASSWORD}@cluster0.276hr9z.mongodb.net/?retryWrites=true&w=majority`;
 mongoose.connect(uri).catch((err) => console.log(err.message));
 
+// store user in mongodb
 app.post('/api/v1/signup', async (req, res) => {
   const user = req.body;
   try {

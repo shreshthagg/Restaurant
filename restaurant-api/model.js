@@ -7,13 +7,13 @@ const UsersSchema = new mongoose.Schema({
 });
 
 UsersSchema.statics.signup = async function (userInfo) {
-  const { name, email, message } = userInfo;
+  const { name, email } = userInfo;
 
   if (!name || !email) {
     throw Error('Name and email is undefined!');
   }
 
-  const user = await this.create(userInfo);
+  await this.create(userInfo);
 };
 
 const UserModel = mongoose.model('users', UsersSchema);

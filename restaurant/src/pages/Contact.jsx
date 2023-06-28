@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import './contact.css';
+import { toast } from 'react-toastify';
 
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const clearFields = () => {
     setName('');
@@ -24,20 +26,24 @@ function Contact() {
       setErrorMessage('Please enter your name and email.');
       return;
     }
-
+    setLoading(true);
     fetch('http://localhost:3000/api/v1/signup', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(info),
     })
       .then((res) => {
+        setLoading(false);
         if (res.ok) {
+          toast.success('Success!');
           return res.json();
         }
         throw new Error('Send request failed.');
       })
       .catch((err) => {
+        setLoading(false);
         console.log(err);
+        toast.error(err.message);
       });
   };
 
@@ -68,7 +74,9 @@ function Contact() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
+        {loading && <div className='contact-loading'> </div>}
         <input type='submit' value='SEND' />
+
         {errorMessage && <p className='error'>{errorMessage}</p>}
       </form>
     </div>

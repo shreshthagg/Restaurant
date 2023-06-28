@@ -67,3 +67,23 @@ input[type='submit'] {
   border-radius: 10px;
   background-color: rgb(68, 10, 10);
 }
+
+.contact-loading {
+  margin: 5px auto;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  border-top: 5px solid #33a8f6;
+  width: 20px;
+  height: 20px;
+  animation: spinner 2s infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
