@@ -8,9 +8,9 @@ function Home() {
         <div className='background'></div>
         <div className='section top'>
           <h2>Welcome to</h2>
-          <h1>RESTAURANT NAME!</h1>
+          <h1>La Petite Pâtisserie!</h1>
           <p>
-            At RESTAURANT NAME, we are passionate for crafting irresistible
+            At Petite Pâtisserie, we are passionate for crafting irresistible
             pastries using the finest ingredients. Step inside and savor the
             symphony of flavors that will transport you to a world of culinary
             bliss.

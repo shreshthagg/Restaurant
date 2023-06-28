@@ -4,12 +4,10 @@
 form {
   display: flex;
   flex-direction: column;
-  background-color: rgb(140, 98, 98);
+  background-color: rgb(193, 161, 161);
   border-radius: 10px;
+  border: 15px solid rgb(80, 40, 40);
   border-bottom: 35px solid rgb(80, 40, 40);
-  border-left: 15px solid rgb(80, 40, 40);
-  border-right: 15px solid rgb(80, 40, 40);
-  border-top: 15px solid rgb(80, 40, 40);
   width: 500px;
   height: 450px;
   padding: 25px 25px 15px;
@@ -19,7 +17,7 @@ form {
 }
 
 label {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: left;
   padding: 5px;
@@ -61,11 +59,14 @@ textarea {
 
 input[type='submit'] {
   flex: 1.5;
+  padding: 5px;
   margin-top: 10px;
   font-size: medium;
   font-weight: bold;
   border-radius: 10px;
   background-color: rgb(68, 10, 10);
+  color: white;
+  cursor: pointer;
 }
 
 .contact-loading {
