@@ -53,11 +53,15 @@ function Contact() {
       <div className='contacts'>
         <h1>Contact Us!</h1>
       </div>
-      <form onSubmit={(e) => handleSubmit(e, { name, email, message })}>
+      <form
+        id='my-form'
+        onSubmit={(e) => handleSubmit(e, { name, email, message })}
+      >
         <label>Enter Your Name</label>
         <input
           type='text'
           name='name'
+          id='formName'
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -65,19 +69,25 @@ function Contact() {
         <input
           type='email'
           name='email'
+          id='formEmail'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <label>Enter Your Message</label>
         <textarea
           name='message'
+          id='formMessage'
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
         {loading && <div className='contact-loading'> </div>}
         <input type='submit' value='SEND' />
 
-        {errorMessage && <p className='error'>{errorMessage}</p>}
+        {errorMessage && (
+          <p id='error' className='error'>
+            {errorMessage}
+          </p>
+        )}
       </form>
     </div>
   );

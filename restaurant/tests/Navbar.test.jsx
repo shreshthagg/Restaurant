@@ -3,7 +3,7 @@ import Navbar from '../src/components/Navbar';
 
 /* globals describe, expect, it */
 describe('Navbar', () => {
-  it('should shrink afterscrolling', () => {
+  it('should shrink after scrolling', () => {
     // Render the Navbar component
     const { container } = render(<Navbar />);
     const navbar = container.querySelector('.navbar');
