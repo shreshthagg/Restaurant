@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import background from "../assets/menubg.jpg";
-import Footer from "../components/Footer";
+import { useEffect, useState } from 'react';
+import background from '../assets/menubg.jpg';
+import Footer from '../components/Footer';
 // import menuData from '../data/menuData';
-import "./Menu.css";
-import Modal from "react-modal";
-Modal.setAppElement("#root");
+import './Menu.css';
+import Modal from 'react-modal';
+// Modal.setAppElement('#root');
 
 const Menu = () => {
   const [menuData, setMenuData] = useState();
   const [activeCategory, setActiveCategory] = useState();
 
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState('');
   const [loading, setLoading] = useState(false);
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -18,13 +18,13 @@ const Menu = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:3000/api/v1/menu")
+    fetch('http://localhost:3000/api/v1/menu')
       .then((res) => {
         setLoading(false);
         if (res.ok) {
           return res.json();
         }
-        throw new Error("Load menu failed!");
+        throw new Error('Load menu failed!');
       })
       .then((res) => {
         setMenuData(res);
@@ -33,7 +33,7 @@ const Menu = () => {
       .catch((error) => {
         setLoading(false);
         console.log(error);
-        setErrorMessage("Load menu failed!");
+        setErrorMessage('Load menu failed!');
       });
   }, []);
 
@@ -60,7 +60,7 @@ const Menu = () => {
       </div>
       <div className='menu'>
         <div className='menu-border'>
-          {" "}
+          {' '}
           {/* Wrap the elements in a div with the menu-border class */}
           <div className='menu-categories'>
             {menuData &&
@@ -68,7 +68,7 @@ const Menu = () => {
                 <button
                   key={category}
                   className={`category-btn ${
-                    category === activeCategory ? "active" : ""
+                    category === activeCategory ? 'active' : ''
                   }`}
                   onClick={() => handleClick(category)}
                 >
@@ -122,7 +122,7 @@ const Menu = () => {
               <h2 className='modal-name'>{selectedItem.name}</h2>
               <p className='modal-ingredients-header'>Ingredients:</p>
               <p className='modal-ingredients'>
-                {selectedItem.ingredients.join(", ")}
+                {selectedItem.ingredients.join(', ')}
               </p>
             </div>
           </div>
