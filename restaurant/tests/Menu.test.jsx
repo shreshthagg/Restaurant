@@ -1,4 +1,4 @@
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Menu from '../src/pages/Menu';
 
 /* globals describe, expect, it */
@@ -25,7 +25,8 @@ describe('Menu', () => {
     render(<Menu />);
 
     for (const item of categories) {
-      await screen.findByText(item);
+      const cat = await screen.findByText(item);
+      expect(cat).toBeInTheDocument();
     }
   });
 });

@@ -1,3 +1,7 @@
 WEA project prototype
 
-Make sure to npm install and run the restaurant-api.
+Make sure to npm install and run the restaurant-api to view the menu.
+
+For the "contact us" section, we have made a database using MongoDB to
+store user emails. The database does indeed store information when we run the
+web app locally, but it does not work for the public.
