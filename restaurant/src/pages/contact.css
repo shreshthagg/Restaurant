@@ -8,12 +8,15 @@ form {
   border-radius: 10px;
   border: 15px solid rgb(80, 40, 40);
   border-bottom: 35px solid rgb(80, 40, 40);
-  width: 500px;
+  width: 80%;
+  max-width: 500px;
   height: 450px;
   padding: 25px 25px 15px;
   color: black;
   font-size: larger;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 label {

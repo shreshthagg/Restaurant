@@ -128,8 +128,6 @@ const Menu = () => {
           </div>
         )}
       </Modal>
-
-      <Footer />
     </>
   );
 };

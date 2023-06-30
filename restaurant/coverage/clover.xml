@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1688058941996" clover="3.2.0">
-  <project timestamp="1688058941996" name="All files">
-    <metrics statements="1059" coveredstatements="1017" conditionals="39" coveredconditionals="34" methods="22" coveredmethods="15" elements="1120" coveredelements="1066" complexity="0" loc="1059" ncloc="1059" packages="3" files="9" classes="9"/>
+<coverage generated="1688130050593" clover="3.2.0">
+  <project timestamp="1688130050593" name="All files">
+    <metrics statements="1044" coveredstatements="1009" conditionals="39" coveredconditionals="34" methods="21" coveredmethods="15" elements="1104" coveredelements="1058" complexity="0" loc="1044" ncloc="1044" packages="3" files="8" classes="8"/>
     <package name="src">
-      <metrics statements="63" coveredstatements="63" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="58" coveredstatements="58" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
       <file name="App.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\App.jsx">
-        <metrics statements="63" coveredstatements="63" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="58" coveredstatements="58" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -42,12 +42,12 @@
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="36" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="38" count="1" type="stmt"/>
         <line num="39" count="1" type="stmt"/>
         <line num="40" count="1" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
@@ -64,15 +64,10 @@
         <line num="56" count="1" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
-        <line num="59" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
-        <line num="61" count="1" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="63" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.components">
-      <metrics statements="48" coveredstatements="48" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <metrics statements="47" coveredstatements="47" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
       <file name="Footer.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\components\Footer.jsx">
         <metrics statements="14" coveredstatements="14" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -91,7 +86,7 @@
         <line num="14" count="1" type="stmt"/>
       </file>
       <file name="Navbar.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\components\Navbar.jsx">
-        <metrics statements="34" coveredstatements="34" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
+        <metrics statements="33" coveredstatements="33" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -124,12 +119,11 @@
         <line num="30" count="11" type="stmt"/>
         <line num="31" count="11" type="stmt"/>
         <line num="32" count="11" type="stmt"/>
-        <line num="33" count="11" type="stmt"/>
-        <line num="34" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.pages">
-      <metrics statements="948" coveredstatements="906" conditionals="30" coveredconditionals="25" methods="18" coveredmethods="11"/>
+      <metrics statements="939" coveredstatements="904" conditionals="30" coveredconditionals="25" methods="17" coveredmethods="11"/>
       <file name="About.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\pages\About.jsx">
         <metrics statements="34" coveredstatements="34" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -329,18 +323,6 @@
         <line num="59" count="1" type="stmt"/>
         <line num="60" count="1" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-      </file>
-      <file name="Location.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\pages\Location.jsx">
-        <metrics statements="9" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
       </file>
       <file name="Menu.jsx" path="C:\Users\coolh\OneDrive\Desktop\Manulife\Restaurant\restaurant\src\pages\Menu.jsx">
         <metrics statements="137" coveredstatements="111" conditionals="16" coveredconditionals="11" methods="7" coveredmethods="1"/>

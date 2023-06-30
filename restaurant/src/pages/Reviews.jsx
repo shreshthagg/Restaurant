@@ -602,8 +602,6 @@ function Reviews() {
           </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 }

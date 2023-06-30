@@ -1,4 +1,3 @@
-import Footer from '../components/Footer';
 import './Home.css';
 
 function Home() {
@@ -53,7 +52,6 @@ function Home() {
           <a href='/contact'> Contact us.</a>
         </p>
       </div>
-      <Footer />
     </>
   );
 }

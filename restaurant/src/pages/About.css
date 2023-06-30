@@ -36,5 +36,23 @@
 
 .disclaimer {
   font-size: 1rem;
-  color:black;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-title {
+    font-size: xx-large;
+    margin: 0;
+  }
+
+  .banner-text {
+    font-size: medium;
+    margin: 0;
+    padding-top: 50px;
+  }
 }
