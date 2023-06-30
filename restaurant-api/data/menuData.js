@@ -23,7 +23,7 @@ module.exports = {
     },
     {
       name: "Chocolate Croissant",
-      price: 3.0,
+      price: 3.25,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Croissant-Chocolate.jpg",
       description:
@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       name: "Cheese Croissant",
-      price: 4.0,
+      price: 3.25,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Croissant-Cheese.jpg",
       description:
@@ -55,12 +55,40 @@ module.exports = {
     },
     {
       name: "Strawberry Croissant",
-      price: 4.0,
+      price: 3.25,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Criossant-Strawberry.jpg",
       description:
         "Flaky, buttery croissant filled with strawberry jam and powdered sugar",
       ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Strawberry"],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
+      name: "Nutella Croissant",
+      price: 4.25,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/11/Croissant-Nutella-Filled.jpg",
+      description: "Flaky, buttery croissant filled and drizzled with Nutella",
+      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Nutella"],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
+      name: "Strawberry & Nutella Croissant",
+      price: 4.25,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2021/06/33-1024x1024.jpg",
+      description:
+        "Flaky, buttery croissant filled with fresh strawberries and Nutella ",
+      ingredients: [
+        "Flour",
+        "Butter",
+        "Yeast",
+        "Sugar",
+        "Strawberry",
+        "Nutella",
+      ],
       vegan: false,
       glutenFree: false,
     },
@@ -73,7 +101,7 @@ module.exports = {
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Danishes-Blueberyy.jpg",
       description: "Pastry filled with blueberry jam",
-      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Fruit Filling"],
+      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Blueberry"],
       vegan: false,
       glutenFree: false,
     },
@@ -83,7 +111,17 @@ module.exports = {
       image:
         "https://sanremobakery.com/wp-content/uploads/2021/06/22-1024x1024.jpg",
       description: "Pastry filled with peaches",
-      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Fruit Filling"],
+      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Peach"],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
+      name: "Lemon Danish",
+      price: 3.5,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/11/Danishes-Lemon.jpg",
+      description: "Pastry filled with lemon jam",
+      ingredients: ["Flour", "Butter", "Yeast", "Sugar", "Lemon"],
       vegan: false,
       glutenFree: false,
     },
@@ -128,6 +166,16 @@ module.exports = {
       vegan: false,
       glutenFree: false,
     },
+    {
+      name: "Custard Tart",
+      price: 2.75,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2021/06/36-1024x1024.jpg",
+      description: "Fresh custard tarts",
+      ingredients: ["Flour", "Butter", "Eggs", "Sugar", "Vanilla"],
+      vegan: false,
+      glutenFree: false,
+    },
   ],
 
   BREADS: [
@@ -153,8 +201,28 @@ module.exports = {
       glutenFree: false,
     },
     {
+      name: "Ciabatta Loaf",
+      price: 4.25,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/12/Loaves-Ciabatta.jpg",
+      description: "White flour, baked flat with flour on top",
+      ingredients: ["Flour", "Water", "Salt", "Yeast"],
+      vegan: true,
+      glutenFree: false,
+    },
+    {
+      name: "Cheese Loaf",
+      price: 4.25,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/12/Loaves-Cheese.jpg",
+      description: "White flour and cheddar cheese baked throughout",
+      ingredients: ["Flour", "Water", "Salt", "Yeast", "Cheese"],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
       name: "Sourdough Bread",
-      price: 5.5,
+      price: 5.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/12/Loaves-Sour-Dough.jpg",
       description: "White flour, rye flour, and homemade sour flour starter",
@@ -164,7 +232,7 @@ module.exports = {
     },
     {
       name: "Multigrain Bread",
-      price: 4.5,
+      price: 3.75,
       image:
         "https://sanremobakery.com/wp-content/uploads/2020/04/Multigrain.jpg",
       description: "White flour, whole wheat flour and 9 grains",
@@ -183,21 +251,21 @@ module.exports = {
       glutenFree: false,
     },
     {
-      name: "Ciabatta Loaf",
-      price: 5.0,
+      name: "Flaxseed Bread",
+      price: 4.0,
       image:
-        "https://sanremobakery.com/wp-content/uploads/2019/12/Loaves-Ciabatta.jpg",
-      description: "White flour, baked flat with flour on top",
-      ingredients: ["Flour", "Water", "Salt", "Yeast"],
-      vegan: true,
-      glutenFree: false,
+        "https://sanremobakery.com/wp-content/uploads/2019/12/Loaves-Flax-Seed.jpg",
+      description: "Whole wheat flour and flax seeds",
+      ingredients: ["Flour", "Water", "Salt", "Flax Seeds", "Yeast"],
+      vegan: false,
+      glutenFree: true,
     },
   ],
 
   CAKES: [
     {
       name: '6" Vanilla Cake',
-      price: 15.0,
+      price: 20.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Vanilla-622-outside.jpg",
       description:
@@ -208,7 +276,7 @@ module.exports = {
     },
     {
       name: '6" Chocolate Cake',
-      price: 15.0,
+      price: 20.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Chocolate-622-outside.jpg",
       description:
@@ -219,7 +287,7 @@ module.exports = {
     },
     {
       name: '6" Carrot Cake',
-      price: 14.0,
+      price: 21.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Carrot-622-outside.jpg",
       description:
@@ -238,7 +306,7 @@ module.exports = {
     },
     {
       name: '6" Red Velvet Cake',
-      price: 16.0,
+      price: 22.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Red-Velvet-622-outside.jpg",
       description:
@@ -249,7 +317,7 @@ module.exports = {
     },
     {
       name: '6" Strawberry Shortcake',
-      price: 13.0,
+      price: 21.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Strawberry-Shortcake-622-outside.jpg",
       description:
@@ -265,8 +333,45 @@ module.exports = {
       glutenFree: false,
     },
     {
+      name: '6" Coffee Cake',
+      price: 25.0,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Coffee-Custard-outside.jpg",
+      description:
+        "Layers of Italian sponge soaked in coffee filled with layers of coffee custard. Decorated with Italian buttercream and chocolate coffee beans.",
+      ingredients: [
+        "Flour",
+        "Butter",
+        "Sugar",
+        "Eggs",
+        "Milk",
+        "Coffee",
+        "Chocolate",
+      ],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
+      name: '6" Oreo Cake',
+      price: 25.0,
+      image:
+        "https://sanremobakery.com/wp-content/uploads/2019/11/Stock-Cake-Oreo-622-outside.jpg",
+      description:
+        "Layers of chocolate sponge filled with layers of Oreo buttercream. Decorated with Oreo buttercream and crushed Oreo cookies on the sides.",
+      ingredients: [
+        "Flour",
+        "Butter",
+        "Sugar",
+        "Cocoa Powder",
+        "Eggs",
+        "Oreo Cookies",
+      ],
+      vegan: false,
+      glutenFree: false,
+    },
+    {
       name: '6" New York Style Cheesecake',
-      price: 15.0,
+      price: 25.0,
       image:
         "https://sanremobakery.com/wp-content/uploads/2019/11/Cheesecakes-Plain-622-example.jpg",
       description:
@@ -372,11 +477,37 @@ module.exports = {
       glutenFree: true,
     },
     {
+      name: "Hot Latte",
+      price: 3.0,
+      image:
+        "https://static.vecteezy.com/system/resources/thumbnails/023/522/886/small/cappuccino-coffee-cup-cutout-free-png.png",
+      ingredients: ["Coffee Beans", "Milk"],
+      vegan: false,
+      glutenFree: true,
+    },
+    {
+      name: "Hot Cappuccino",
+      price: 3.0,
+      image: "https://pngimg.com/d/cappuccino_PNG26.png",
+      ingredients: ["Coffee Beans", "Milk"],
+      vegan: false,
+      glutenFree: true,
+    },
+    {
       name: "Iced Latte",
       price: 3.0,
       image:
         "https://static.vecteezy.com/system/resources/previews/011/048/029/original/iced-coffee-watercolor-set-free-png.png",
       ingredients: ["Coffee Beans", "Milk"],
+      vegan: false,
+      glutenFree: true,
+    },
+    {
+      name: "Hot Chocolate",
+      price: 3.0,
+      image:
+        "https://images.pngnice.com/download/2111/Hot-Chocolate-Glass-PNG-Transparent-Image.png",
+      ingredients: ["Cocoa Powder", "Milk", "Sugar", "Whipped Cream"],
       vegan: false,
       glutenFree: true,
     },
@@ -390,12 +521,11 @@ module.exports = {
       glutenFree: true,
     },
     {
-      name: "Hot Chocolate",
-      price: 3.0,
-      image:
-        "https://images.pngnice.com/download/2111/Hot-Chocolate-Glass-PNG-Transparent-Image.png",
-      ingredients: ["Cocoa Powder", "Milk", "Sugar", "Whipped Cream"],
-      vegan: false,
+      name: "Lemonade",
+      price: 2.5,
+      image: "https://pngimg.com/d/lemonade_PNG16937.png",
+      ingredients: ["Lemons", "Water", "Sugar"],
+      vegan: true,
       glutenFree: true,
     },
     {
@@ -405,14 +535,6 @@ module.exports = {
         "https://p7.hiclipart.com/preview/453/794/383/smoothie-ice-cream-milkshake-juice-strawberry-milkshake.jpg",
       ingredients: ["Strawberries", "Yogurt", "Honey"],
       vegan: false,
-      glutenFree: true,
-    },
-    {
-      name: "Lemonade",
-      price: 2.5,
-      image: "https://pngimg.com/d/lemonade_PNG16937.png",
-      ingredients: ["Lemons", "Water", "Sugar"],
-      vegan: true,
       glutenFree: true,
     },
   ],

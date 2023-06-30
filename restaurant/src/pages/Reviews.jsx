@@ -110,7 +110,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            This French bakery is a true hidden gem! The quality of their baked
+            La Petite Pâtisserie is a true hidden gem! The quality of their baked
             goods is exceptional. From the rich and creamy éclairs to the
             delicate fruit tarts, every bite is a piece of heaven. The attention
             to detail and the use of high-quality ingredients are evident in
@@ -140,7 +140,7 @@ function Reviews() {
             <span className='fa fa-star'></span>
           </div>
           <p className='review-text'>
-            Step into this charming French bakery and be transported to a world
+            Step into this charming bakery and be transported to a world
             of culinary delights. The pastries are exquisite, with the
             croissants stealing the show with their buttery goodness. The
             bakers' expertise is evident in the delicate macarons and the
@@ -203,7 +203,7 @@ function Reviews() {
           </div>
           <p className='review-text'>
             I've traveled extensively in France, and I can confidently say that
-            this bakery rivals some of the best I've encountered in Paris. The
+            La Petite Pâtisserie rivals some of the best I've encountered in Paris. The
             flavors are authentic and the craftsmanship is impeccable. The
             croissants are light and airy, and the tarte-aux-fruits is a true
             work of art. Treat yourself to a slice of French indulgence at this
@@ -232,7 +232,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            A delightful find! This French bakery captures the essence of
+            A delightful find! This bakery captures the essence of
             Parisian flavors with its delectable pastries. The croissants are
             buttery and flaky, and the assortment of tarts and cakes is a true
             treat for the taste buds. The charming atmosphere and friendly staff
@@ -262,7 +262,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            I stumbled upon this French bakery and it was love at first bite!
+            I stumbled upon La Petite Pâtisserie on one of my walks and it was love at first bite!
             Their baguettes are crusty on the outside, soft on the inside, and
             perfect for making sandwiches. The patisserie items are equally
             delightful; the éclairs and tartes are beautifully crafted with a
@@ -292,7 +292,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            This French bakery is a hidden treasure! Their croissants are simply
+            This bakery is a hidden treasure! Their croissants are simply
             divine—flaky, buttery, and melt-in-your-mouth. The boulangerie has
             an authentic charm, and their range of pastries is impressive. From
             the classic pain au chocolat to the delicate mille-feuille, every
@@ -382,7 +382,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            I'm in awe of the exquisite pastries at this French bakery! The
+            I'm in awe of the exquisite pastries at La Petite Pâtisserie! The
             macarons are small bites of heaven—crispy on the outside, chewy on
             the inside, and bursting with delightful flavors. Their tarts are
             visually stunning and incredibly delicious. You can taste the
@@ -443,7 +443,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            I can't get enough of the delectable treats from this bakery! The
+            I can't get enough of the delectable treats here! The
             bread is always fresh and crusty, and their pastries are heavenly.
             The apple pie is a must-try, with its perfectly spiced filling and
             buttery crust. Don't miss out on their muffins and scones
@@ -473,7 +473,7 @@ function Reviews() {
             <span className='fa fa-star checked'></span>
           </div>
           <p className='review-text'>
-            I'm in awe of the artistry displayed at this French bakery. The
+            I'm in awe of the artistry displayed at this bakery. The
             pastries are like edible works of art, beautifully crafted with
             intricate details. The flavors are equally impressive—subtle and
             balanced. Whether you're indulging in a delicate éclair or savoring
@@ -504,7 +504,7 @@ function Reviews() {
           </div>
           <p className='review-text'>
             Experience the art of French baking at its finest in this bakery.
-            The croissants are a true masterpiece—golden, crisp, and deliciously
+            The croissants at La Petite Pâtisserie are a true masterpiece—golden, crisp, and deliciously
             buttery. The assortment of pastries, from the decadent chocolate
             eclairs to the delicate fruit tarts, showcases the baker's skill and
             passion. A little taste of France in every bite!
