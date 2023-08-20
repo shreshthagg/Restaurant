@@ -1,19 +1,15 @@
-WEA project prototype
-
-Make sure to npm install and run the restaurant-api to view the menu.
-
-For the "contact us" section, we used MongoDB to
-store user emails. It stores information when we run the
-web app locally, but it does not work for the public.
-
 
 Application overview
 
-We have created a web application for a restaurant, specifically a french-inspired bakery. We have incorporated some major components that are typically seen in any restaurant’s website such as a home page, menu, and sections for “About Us”, “Reviews”, and “Contact Us”. 
+We have created a web application for a restaurant, specifically a french-inspired bakery. We have incorporated some major components that are typically seen
+in any restaurant’s website such as a home page, menu, and sections for “About Us”, “Reviews”, and “Contact Us”. 
+We used ReactJS for the front-end. The front-end can fetch data and create POST requests using the Rest API. The API is connected to MongoDB, 
+which stores user contact information. The front-end incorporates test-driven development to ensure that all the components and pages render and function as expected.
+Purpose: The main purpose of the website is to market the restaurant (La Petite Pâtisserie) by providing basic information about this restaurant.
+It aims to work as a medium to attract potential customers. We also provide a way for our customers to contact us or get to know about the range of delicacies we offer.
 
-We used ReactJS for the front-end. The front-end can fetch data and create POST requests using the Rest API. The API is connected to MongoDB, which stores user contact information. The front-end incorporates test-driven development to ensure that all the components and pages render and function as expected.
-
-Purpose: The main purpose of the website is to market the restaurant (La Petite Pâtisserie) by providing basic information about this restaurant. It aims to work as a medium to attract potential customers. We also provide a way for our customers to contact us or get to know about the range of delicacies we offer.
+Technologies used:
+ReactJs, JS, CSS, VSCode, APIs, MongoDB
 
 Functions: 
 The menu action fetches information from the API and the menu is dynamic, hence it can be updated easily. 
