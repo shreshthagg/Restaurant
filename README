@@ -1,5 +1,5 @@
 
-Application overview
+# Application overview
 
 We have created a web application for a restaurant, specifically a french-inspired bakery. We have incorporated some major components that are typically seen
 in any restaurant’s website such as a home page, menu, and sections for “About Us”, “Reviews”, and “Contact Us”. 
@@ -8,22 +8,22 @@ which stores user contact information. The front-end incorporates test-driven de
 Purpose: The main purpose of the website is to market the restaurant (La Petite Pâtisserie) by providing basic information about this restaurant.
 It aims to work as a medium to attract potential customers. We also provide a way for our customers to contact us or get to know about the range of delicacies we offer.
 
-Technologies used:
+# Technologies used:
 ReactJs, JS, CSS, VSCode, APIs, MongoDB
 
-Functions: 
+# Functions: 
 The menu action fetches information from the API and the menu is dynamic, hence it can be updated easily. 
 We included a navigation bar that allows the user to travel to all the different pages on the website. 
 The ‘Contact Us’ form stores customer’s information in a database, though currently, this only works during local development since it requires a password. 
 We made all the pages responsive to different screen resolutions.
 Upon clicking a menu item, its ingredients are displayed.
 
-Constraints: 
+# Constraints: 
 Not being able to get real-time reviews from our customers.
 Not being able to deploy the website on a server.
 Having to manually connect to the database in order for it to store the contact information.
 
-Development process:
+# Development process:
 Group together as a team and discuss to decide our product and purpose.
 Brainstorming the different components that could be included in the application.
 Finalize the components and decide where the strict requirements of this project would be implemented.
@@ -32,7 +32,7 @@ Set a schedule to meet every two days to check the progress of each member’s t
 
 
 
-Challenges faced: 
+# Challenges faced: 
 Different elements of the website required different styles and different functionalities, but used the same class names (or lacked a class name) which caused some issues. The CSS styling attributes became global and affected pages that we did not mean to alter.
 Solution: We had to be more careful and specific when choosing class names in the CSS files, and to ensure that we used class names whenever possible for specific elements of a page.
 Constructing artistic UIs and balancing usability and aesthetics. We wanted the page to be appealing, but to still be functional and easy to use.
@@ -42,7 +42,7 @@ Solution: Implemented the use of MongoDB to store the information from the submi
 Since some members were in different time-zones, clear communication was a challenge. Due to this, some members missed meetings or messages and it was difficult to schedule meetings.
 Solution: To tackle this, we tried to work around everyone’s schedule by having meetings when the majority of members were available. We are introducing weekly LettuceMeets to view each other’s availability to make it easier to schedule calls and arrange work times.
 
-Plans for improvement: 
+# Plans for improvement: 
 Adding a section where customers can submit their reviews, as well as adding a sorting functionality for the reviews for increased usability.
 Incorporating a staff section to showcase the staff that works at this restaurant.
 Adding an order section to enable customers to place an order online to enhance convenience and accessibility.
